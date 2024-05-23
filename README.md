@@ -15,5 +15,3 @@ For running on Miyoo:
 Navigate to 'JumpyAlien' folder within 'Miyoo Mini Files' and place main.py, sprites.py, and settings.py here.
 Then copy everything within 'Miyoo Mini Files' to root of SD card.
 Should then work normally.
-
-
