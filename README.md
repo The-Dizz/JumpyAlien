@@ -6,7 +6,8 @@ My intention is to port this over to Miyoo Mini
 
 ## Controls
 
-Press space to jump, it's not very complicated. 
+Press space or A on controller to jump , it's not very complicated.
+B or escape to quit
 
 Resolution, frame rate, and difficulty can be changed in settings.py
 
