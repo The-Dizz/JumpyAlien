@@ -4,7 +4,7 @@ from random import choice, randint
 
 class BG(pygame.sprite.Sprite): # Background sprite
     def __init__(self,groups,scale_factor):
-        super().__init__(groups)
+        super(BG, self).__init__(groups)
         bg_image =  pygame.image.load('darkPurple.png')
         bg_image = pygame.transform.scale(bg_image,(bg_image.get_width()*2,bg_image.get_height())) # Double background width
 
@@ -29,7 +29,7 @@ class BG(pygame.sprite.Sprite): # Background sprite
 
 class Ground(pygame.sprite.Sprite):
     def __init__(self,groups,scale_factor):
-        super().__init__(groups)
+        super(Ground, self).__init__(groups)
         self.sprite_type = 'ground'
 
         # Image
@@ -52,7 +52,7 @@ class Ground(pygame.sprite.Sprite):
         
 class Player(pygame.sprite.Sprite):
     def __init__(self,groups):
-        super().__init__(groups)
+        super(Player, self).__init__(groups)
 
         # Image
         player_image = pygame.image.load('shipYellow_manned.png')
@@ -63,7 +63,7 @@ class Player(pygame.sprite.Sprite):
         self.pos = pygame.math.Vector2(self.rect.topleft)
 
         # Load sound
-        self.jump_sound = pygame.mixer.Sound('laserRetro_002.ogg')
+        self.jump_sound = pygame.mixer.Sound('laserRetro_002.wav')
         self.jump_sound.set_volume(0.5)
 
         # Movement
@@ -87,7 +87,7 @@ class Player(pygame.sprite.Sprite):
         
 class Obstacle(pygame.sprite.Sprite):
     def __init__(self,groups,scale_factor):
-        super().__init__(groups)
+        super(Obstacle, self).__init__(groups)
         self.sprite_type = 'obstacle'
 
         # Image
