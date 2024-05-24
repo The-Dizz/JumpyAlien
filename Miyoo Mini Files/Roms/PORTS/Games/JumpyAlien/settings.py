@@ -1,0 +1,4 @@
+WINDOW_WIDTH = 640
+WINDOW_HEIGHT = 480 
+FRAME_RATE = 60
+DIFFICULTY_LEVEL = 0.65 # Changes size of obstacles
