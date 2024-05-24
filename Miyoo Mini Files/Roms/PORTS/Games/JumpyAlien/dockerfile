@@ -1,0 +1,14 @@
+# Use an official Python 2.7 runtime as a parent image
+FROM python:2.7-slim
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the current directory contents into the container at /usr/src/app
+COPY . .
+
+# Install Pygame 1.9.4
+RUN pip install pygame==1.9.4
+
+# Run the Pygame script when the container launches
+CMD ["python", "main.py"]
